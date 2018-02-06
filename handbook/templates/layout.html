@@ -1,0 +1,69 @@
+{# handbook/templates/layout.html_ #}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/custom/custom.css">
+    <title>{% block title %} Handbook {% endblock %}</title>
+  </head>
+  
+  <body>
+      
+    <div class="container-fluid viewport-background">
+      <nav class="navbar navbar-dark fixed-top" style="background-color: #404040;height:30px;"></nav>
+      <div class="row">
+        
+<!--START Left Panel-->
+        <div class="container viewport-leftpanel">
+          
+          <!--<a href="#" class="badge badge-danger my-logo">CУ</a>-->
+            <p class="my-logo">CУ</p>
+          <!--<div><span class="badge badge-danger my-logo">CУ</span></div>-->
+          <!--<div><hr class="divider" style="border-color:#858c93"></div>-->
+          
+          <div class="nav flex-column nav-pills" id="leftpan-menu-main" role="tablist" aria-orientation="vertical">
+            <a class="nav-link leftpan-tab active" data-toggle="pill" role="tab" aria-selected="true" id="leftpan-home" href="#content-home" aria-controls="content-home" >Home</a>
+            <a class="nav-link leftpan-tab" data-toggle="pill" role="tab" aria-selected="false" id="leftpan-aboutme" href="#content-aboutme" aria-controls="content-aboutme" >About Me</a>
+            <a class="nav-link leftpan-tab" data-toggle="pill" role="tab" aria-selected="false" id="leftpan-projects" href="#content-projects" aria-controls="content-projects" >Projects</a>
+            <a class="nav-link leftpan-tab" data-toggle="pill" role="tab" aria-selected="false" id="leftpan-namegen" href="#content-namegen" aria-controls="content-namegen" >Name Generator</a>
+            <a class="nav-link leftpan-tab" data-toggle="pill" role="tab" aria-selected="false" id="leftpan-yearbook" href="#content-yearbook" aria-controls="content-yearbook" >Yearbook</a>
+          </div>
+          
+          <!--<div><hr class="divider" style="border-color:#858c93;margin-left:10px;margin-right:10px;"></div>-->
+          
+          <!--<div class="nav flex-column nav-pills" id="leftpan-menu-sub" role="tablist" aria-orientation="vertical">-->
+          <!--{% block leftpan_submenu %} {% endblock %}-->
+          <!--</div>-->
+          
+        </div>
+<!--END Left Panel-->
+        
+<!--START CONTENT -->
+        <div class="container viewport-content col-sm-12">
+          
+          <div class="tab-content">
+            <div class="tab-pane fade show active" role="tabpanel" id="content-home" aria-labelledby="leftpan-home"> {% include "/content/home.html" %} </div>
+            <div class="tab-pane fade" role="tabpanel" id="content-aboutme" aria-labelledby="leftpan-aboutme"> {% include "/content/aboutme.html" %} </div>
+            <div class="tab-pane fade" role="tabpanel" id="content-projects" aria-labelledby="leftpan-projects"> {% include "/content/projects.html" %} </div>
+            <div class="tab-pane fade" role="tabpanel" id="content-namegen" aria-labelledby="leftpan-namegen"> {% include "/content/namegen.html" %} </div>
+            <div class="tab-pane fade" role="tabpanel" id="content-yearbook" aria-labelledby="leftpan-yearbook"> {% include "/content/yearbook.html" %} </div>
+            
+          </div>
+        </div>
+<!--END CONTENT-->
+      </div>
+    </div>
+
+    <script src="static/custom/custom.js"></script>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+
+

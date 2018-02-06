@@ -1,0 +1,12 @@
+config.py
+requirements.txt
+run.py
+instance/
+    config.py
+yourapp/
+    __init__.py
+    views.py
+    models.py
+    forms.py
+    static/
+    templates/
