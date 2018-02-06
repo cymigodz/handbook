@@ -6,8 +6,29 @@
     src: url(../fonts/exo_2_black_italic.ttf);
 }
 
+@font-face {
+    font-family: advent_pro_light;
+    src: url(../fonts/advent_pro_extra_light.ttf);
+}
+
+@font-face {
+    font-family: advent_pro_bold;
+    src: url(../fonts/advent_pro_bold.ttf);
+}
+
+@font-face {
+    font-family: alegreya_sans_sc_medium;
+    src: url(../fonts/alegreya_sans_sc_medium.ttf);
+}
+
+@font-face {
+    font-family: alegreya_sans_medium;
+    src: url(../fonts/alegreya_sans_medium.ttf);
+}
+
 html, body {
     background-color:#fdfdff;
+    font-family:alegreya_sans_medium;
 }
 
 
@@ -63,7 +84,7 @@ html, body {
         padding-right:27px;
         padding-bottom:0px;
         padding-left:15px;
-        margin-top:-45px;
+        margin-top:-70px;
         margin-bottom:-25px;
         font-weight:bold;
         font-size:156px;
@@ -87,6 +108,8 @@ html, body {
         width:247px;
         position:fixed;
         z-index:1;
+        
+        font-family:alegreya_sans_sc_medium;
     }
 
 /*LAYOUT CONTENT*/
@@ -111,6 +134,8 @@ html, body {
     width:247px;
     position:fixed;
     z-index:1;
+    
+    font-family:alegreya_sans_sc_medium;
 }
 
 .content-leftpan-item{
@@ -138,20 +163,35 @@ html, body {
     /* mouse over link */
     .content-leftpan-item:hover {
         color: #FFFFFF;
+        font-weight:bold;
         background-color:#31485e;
     }
     
     /* selected link */
     .content-leftpan-item.list-group-item.active{
-        color: #FFFFFF;
+        /*color: #FFFFFF;*/
+        color: #333;
         font-weight:bold;
-        font-size-adjust:0.8;
-        background-color:#31485e;
+        /*font-size-adjust:0.8;*/
+        /*background-color:#2c4156;*/
+        background-color:#FDFDFF;  
     }
     
     .page-link{
         color: #FDF3E7;
         background-color:#31485e;
+    }
+
+
+    .page-item.active .page-link{
+        color: #31485e;
+        background-color:#fff;
+        border-color:#fff;
+    }
+    .page-item:hover .page-link{
+        color: #31485e;
+        background-color:#fff;
+        border-color:#fff;
     }
 
 
@@ -164,7 +204,17 @@ html, body {
     z-index:0;
 }
 
-
+#content-home-scroll{
+    height:100vh;
+    overflow-y: scroll; 
+    position:relative;
+    text-align:justify;
+    /*min-width:400px;*/
+    padding-top:40px;
+    padding-left:40px;
+    padding-bottom:40px;
+    padding-right:40px;
+}
 /*Small devices (landscape phones, 576px and up)*/
 /*sm*/
 @media (min-width: 576px) { 

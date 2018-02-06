@@ -1,12 +1,7 @@
-config.py
-requirements.txt
-run.py
-instance/
-    config.py
-yourapp/
-    __init__.py
-    views.py
-    models.py
-    forms.py
-    static/
-    templates/
+Built on:
+Flask
+Jinja2
+Bootstrap
+
+Memo to myself:
+content left panel pagination moves when scrollbar enable/disable
