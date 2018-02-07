@@ -1,3 +1,77 @@
 {# _myapp/templates/index.html_ #}
 
 {% extends "layout-main.html" %}
+
+{% block layout1_title %} 
+Handbook 
+{% endblock %}
+
+{% block layout1_leftpan1 %} 
+<div class="list-group list-group-flush my-leftpan1-menu">
+    
+    <div class="bg-dark p-4">
+        <h4 class="text-white">Hello, are you ME?</h4>
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-envelope"></span>
+            </span>
+            <input class="form-control" type="text" placeholder="Username">
+        </div>
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-lock"></span>
+            </span>
+            <input class="form-control" type="password" placeholder="Password">
+        </div> 
+        
+        
+    </div>
+
+
+    <hr>
+    
+    <a class="list-group-item list-group-item-action my-leftpan1-tab active" 
+        data-toggle="tab" 
+        id="id-leftpan1-home"     
+        href="#id-subpage-container-home">Updates</a>
+    <a class="list-group-item list-group-item-action my-leftpan1-tab"        
+        data-toggle="tab" 
+        id="id-leftpan1-aboutme"  
+        href="#id-subpage-container-aboutme"  >Me</a>
+    <a class="list-group-item list-group-item-action my-leftpan1-tab"        
+        data-toggle="tab" 
+        id="id-leftpan1-projects" 
+        href="#id-subpage-container-projects" >Projects</a>
+        
+    <hr>
+    <span class="badge badge-dark">Private Functions</span>
+    
+    <a class="list-group-item list-group-item-action my-leftpan1-tab"        
+        data-toggle="tab" 
+        id="id-leftpan1-gameplay" 
+        href="#id-subpage-container-gameplay" >Gameplay</a>
+    <a class="list-group-item list-group-item-action my-leftpan1-tab"        
+        data-toggle="tab" 
+        id="id-leftpan1-persona" 
+        href="#id-subpage-container-persona" >Personas</a>
+    <a class="list-group-item list-group-item-action my-leftpan1-tab"        
+        data-toggle="tab" 
+        id="id-leftpan1-namegen"  
+        href="#id-subpage-container-namegen"  >Name generator</a>
+    <a class="list-group-item list-group-item-action my-leftpan1-tab"        
+        data-toggle="tab" 
+        id="id-leftpan1-timeconver" 
+        href="#id-subpage-container-timeconver" >Whats that time?</a>
+</div>
+{% endblock %}
+
+{% block layout1_main %} 
+<div class="tab-pane show active" id="id-subpage-container-home"     > {% include "/content/home.html" %} </div>
+<div class="tab-pane"             id="id-subpage-container-aboutme"  > {% include "/content/aboutme.html" %} </div>
+<div class="tab-pane"             id="id-subpage-container-projects" > {% include "/content/projects.html" %} </div>
+
+<div class="tab-pane"             id="id-subpage-container-gameplay"  > {% include "/content/gameplay.html" %} </div>
+<div class="tab-pane"             id="id-subpage-container-persona"  > {% include "/content/persona.html" %} </div>
+<div class="tab-pane"             id="id-subpage-container-namegen"  > {% include "/content/namegen.html" %} </div>
+<div class="tab-pane"             id="id-subpage-container-timeconver" > {% include "/content/timeconver.html" %} </div>
+{% endblock %}
