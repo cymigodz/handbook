@@ -1,0 +1,56 @@
+{# handbook/templates/layout-main.html_ #}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/custom/custom.css">
+    <title>Handbook</title>
+  </head>
+  
+  <body>
+      
+    <div class="container-fluid my-page-container">
+      <div class="row my-page-row">
+        
+<!--START Left Panel-->
+        <div class="my-leftpan1-container">
+          <p class="my-leftpan1-logo">CУ</p>
+          
+          <div class="list-group list-group-flush my-leftpan1-menu">
+            <a class="list-group-item list-group-item-action my-leftpan1-tab active" data-toggle="tab" id="id-leftpan1-home"     href="#id-subpage-containerhome"     >Home</a>
+            <a class="list-group-item list-group-item-action my-leftpan1-tab"        data-toggle="tab" id="id-leftpan1-aboutme"  href="#id-subpage-containeraboutme"  >About me</a>
+            <a class="list-group-item list-group-item-action my-leftpan1-tab"        data-toggle="tab" id="id-leftpan1-projects" href="#id-subpage-containerprojects" >Projects</a>
+            <a class="list-group-item list-group-item-action my-leftpan1-tab"        data-toggle="tab" id="id-leftpan1-namegen"  href="#id-subpage-containernamegen"  >Name generator</a>
+            <a class="list-group-item list-group-item-action my-leftpan1-tab"        data-toggle="tab" id="id-leftpan1-yearbook" href="#id-subpage-containeryearbook" >Yearbook</a>
+          </div>
+          
+        </div>
+<!--END Left Panel-->
+        
+<!--START CONTENT -->
+        <div class="tab-content col-sm-12 my-main-container">
+          <div class="container-fluid my-subpage-container tab-pane show active" id="id-subpage-containerhome"     > {% include "/content/home.html" %} </div>
+          <div class="container-fluid my-subpage-container tab-pane"             id="id-subpage-containeraboutme"  > {% include "/content/aboutme.html" %} </div>
+          <div class="container-fluid my-subpage-container tab-pane"             id="id-subpage-containerprojects" > {% include "/content/projects.html" %} </div>
+          <div class="container-fluid my-subpage-container tab-pane"             id="id-subpage-containernamegen"  > {% include "/content/namegen.html" %} </div>
+          <div class="container-fluid my-subpage-container tab-pane"             id="id-subpage-containeryearbook" > {% include "/content/yearbook.html" %} </div>
+        </div>
+<!--END CONTENT-->
+
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
+
+
+
+
+
