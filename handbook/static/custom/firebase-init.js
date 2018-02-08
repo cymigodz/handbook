@@ -15,20 +15,100 @@ firebase.initializeApp(config);
 // =============================================================================
 // Connection Test
 // =============================================================================
-var connectionRef = firebase.database().ref('/testConnection');
 var timeNow = Date.now();
 
-connectionRef.set({
-    readTest: "Read Successful.",
-    writeTest: timeNow
-});
+// PUBLIC
+var connTestPublic = firebase.database().ref('/connTestPublic');
 
-connectionRef.once('value').then(function(snapshot) {
-    var readTestResult = (snapshot.val() && snapshot.val().readTest) || 'Read Failed';
-    var writeTestResult = (snapshot.val() && snapshot.val().writeTest) || 'Write Failed';
-    console.log("Read Test:" + readTestResult)
-    if (timeNow == writeTestResult){
-        console.log("Write Test: Write Successful");
+connTestPublic.once('value').then(
+    function(snapshot) {
+        var publicRT = (snapshot.val() && snapshot.val().read) || 'fail';
+        console.log("Public Read Test: " + publicRT);
+    },
+    function(){
+        console.log("Public Read Test: premature exit");
     }
-});
-// =============================================================================
+)
+
+connTestPublic.update({
+    write: timeNow
+}).then(
+    connTestPublic.once('value').then(
+        function(snapshot) {
+            var publicWT = (snapshot.val() && snapshot.val().write) || 'fail';
+            if(publicWT == timeNow){
+                console.log("Public Write Test:" + publicWT);
+            } else {
+                console.log("Public Write Test: different value");
+            }
+        },
+        function(error){
+            console.log("Public Write Test: " + error.message);
+        }
+    
+    ),
+    function(error){
+        console.log("Public Write Test: " + error.message);
+    });
+
+// PRIVATE
+var connTestPrivate = firebase.database().ref('/connTestPrivate');
+
+connTestPrivate.once('value').then(
+    function(snapshot) {
+        var privateRT = (snapshot.val() && snapshot.val().read) || 'fail';
+        console.log("Private Read Test: " + privateRT);
+    },
+    function(error){
+        console.log("Private Read Test: " + error.message);
+    }
+)
+
+connTestPrivate.update({
+    write: timeNow
+}).then(
+    function(){
+        connTestPrivate.once('value').then(
+            function(snapshot) {
+                var privateWT = (snapshot.val() && snapshot.val().write) || 'fail';
+                console.log("Private Write Test:" + privateWT);
+            },
+            function(error){
+                console.log("Private Write Test:" + error.message);
+            });
+    },
+    function(error){
+        console.log("Private Write Test:" + error.message);
+    }
+);
+
+// PROTECTED
+var connTestProtected = firebase.database().ref('/connTestProtected');
+
+connTestProtected.once('value').then(
+    function(snapshot) {
+        var protectedRT = (snapshot.val() && snapshot.val().read) || 'fail';
+        console.log("Protected Read Test: " + protectedRT);
+    },
+    function(error){
+        console.log("Protected Read Test: " + error.message);
+    }
+)
+
+connTestProtected.update({
+    write: timeNow
+}).then(
+    function(){
+        connTestProtected.once('value').then(
+            function(snapshot) {
+                var protectedWT = (snapshot.val() && snapshot.val().write) || 'fail';
+                console.log("Protected Write Test:" + protectedWT);
+            },
+            function(error){
+                console.log("Protected Write Test:" + error.message);
+            });
+    },
+    function(error){
+        console.log("Protected Write Test:" + error.message);
+    }
+);
