@@ -249,13 +249,15 @@
     overflow-y: scroll; 
     position:relative;
     text-align:justify;
-    padding:40px;
+    /*padding:40px;*/
+    /*margin-left:40px;*/
     
 }
 
     .my-home-content-post-container{
         max-width:1000px;
         min-width:400px;
+        /*padding-left:20px*/
     }
 
 /*Small devices (landscape phones, 576px and up)*/

@@ -1,4 +1,7 @@
 *.egg
 *.egg-info
+
 bootstrap
 jquery
+
+firebase
