@@ -4,7 +4,13 @@
 /*Medium devices (tablets, 768px and up)*/
 /*md*/
 @media (min-width: 768px) { 
-    
+  
+}
+
+/*Large devices (desktops, 992px and up)*/
+/*lg*/
+@media (min-width: 992px) { 
+  
 /*Page*/
 
     .my-page-container{
@@ -77,6 +83,7 @@
             border: none;
             outline: 0;
             outline-style: none;
+            text-align:unset;
         }
         
         /* unvisited link */
@@ -250,16 +257,11 @@
     }
 
     .my-home-content-post-container{
-        max-width:1000px;
+        /*max-width:1000px;*/
+        max-width:unset;
         min-width:400px;
         /*padding-left:20px*/
     }
-    
-}
-
-/*Large devices (desktops, 992px and up)*/
-/*lg*/
-@media (min-width: 992px) { 
     
 }
 

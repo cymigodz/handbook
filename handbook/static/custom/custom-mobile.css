@@ -90,6 +90,7 @@
             border: none;
             outline: 0;
             outline-style: none;
+            text-align:center;
         }
         
         /* unvisited link */
@@ -255,13 +256,14 @@
         color:#333;
         /*height:100vh;*/
         /*padding-left:247px;*/
+        padding-left:0px;
         z-index:0;
         
     }
     
     #id-home-content-scroll{
         /*height:100vh;*/
-        overflow-y: scroll; 
+        overflow-y: hidden; 
         position:relative;
         text-align:justify;
         /*padding:40px;*/
@@ -270,17 +272,16 @@
     }
 
     .my-home-content-post-container{
-        max-width:1000px;
-        min-width:400px;
+        /*max-width:1000px;*/
+        /*min-width:200px;*/
         /*padding-left:20px*/
     }
-    
-    
     
     
 
 /*Small devices (landscape phones, 576px and up)*/
 /*sm*/
-@media (min-width: 576px) { 
+@media (min-width: 600px) { 
+
     
 }
