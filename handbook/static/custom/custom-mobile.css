@@ -270,6 +270,10 @@
         /*margin-left:40px;*/
         
     }
+    
+    .card-header{
+        text-align:left;
+    }
 
     .my-home-content-post-container{
         /*max-width:1000px;*/
