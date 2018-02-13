@@ -3,7 +3,13 @@
     <div class="row my-subpage-row">
         
     <!--START LEFT PANEL-->
-        <div class="my-leftpan2-container">
+        <div class="my-leftpan2-controller navbar navbar-dark sticky-top">
+            <span></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target={% block layout2_leftpan2_id_target %} {% endblock %} aria-controls={% block layout2_leftpan2_id_target2 %} {% endblock %} aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="my-leftpan2-container collapse sticky-top" id={% block layout2_leftpan2_id %} {% endblock %}>
             {% block layout2_leftpan2 %} {% endblock %}
         </div>
     <!--END LEFT PANEL-->

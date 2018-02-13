@@ -34,6 +34,7 @@
     /*}*/
 
 /*Page*/
+
     .my-page-container{
         
     }
@@ -44,42 +45,42 @@
 
     /*layout-page-leftpan1*/
     .my-leftpan1-container{
-        padding-left:0px;
-        padding-right:0px;
-        padding-top:30px;
-        border-left-width:1px;
-        border-left-style:solid;
-        border-left-color:#333;
-        
-        height:100vh;
-        width:247px;
-        z-index:1;
-        
-        position:fixed;
-        
         font-family:alegreya_sans_sc_medium;
-        overflow-y: auto;
         background-color:#2C3E50;
         color:#FDF3E7;
+        
+        /*col-sm-12*/
+        -webkit-box-fless:0;
+        -ms-flex:0 0 100%;
+        flex:0 0 100%;
+        max-width:100%;
+        
+        height:110px;
+        overflow:hidden;
         
     }
 
          /*top left logo*/
         .my-leftpan1-logo{
-            padding-top:0px;
-            padding-right:27px;
-            padding-bottom:0px;
-            padding-left:15px;
-            margin-top:-70px;
-            margin-bottom:-25px;
-            
-            font-weight:bold;
-            font-size:156px;
-            font-family:logofont;
-            color:#ffffff;
+            padding-top: 0px;
+            padding-right: 27px;
+            padding-bottom: 0px;
+            padding-left: 15px;
+            /*margin-top: -70px;*/
+            margin-bottom: 0px;
+            font-weight: bold;
+            font-size: 40px;
+            font-family: logofont;
+            color: #ffffff;
+            text-align: center;
         }
         
         .my-leftpan1-menu{
+            overflow-x:auto;
+            overflow-y:hidden;
+            height:60px;
+            flex-direction:row;
+            white-space:nowrap;
             
         }
         
@@ -115,7 +116,6 @@
             background-color:#DC3545;
             color: #FFFFFF;
             font-weight:bold;
-            font-size-adjust:0.8;
         }
         
 
@@ -124,8 +124,9 @@
         padding-right:0px;
         background-color: #fdfdff;
         color:#333;
-        height:100vh;
-        padding-left:247px;
+        /*height:100vh;*/
+        padding-left:0px;
+        /*padding-left:247px;*/
         z-index:0;
     }
     
@@ -139,28 +140,41 @@
             .my-subpage-row{
                 
             }
-    
-                .my-leftpan2-container{
-                    padding-left:0px;
-                    padding-right:0px;
-                    padding-top:30px;
+                .my-leftpan2-controller{
                     background-color:#31485e;
                     color:#FDF3E7;
-                    height:100vh;
-                    width:247px;
-                    position:fixed;
-                    z-index:1;
+                    flex:0 0 100%;
+                }
+                
+                .my-leftpan2-container{
+                    /*padding-left:0px;*/
+                    /*padding-right:0px;*/
+                    /*padding-top:30px;*/
+                    background-color:#31485e;
+                    color:#FDF3E7;
+                    /*height:100vh;*/
+                    /*width:247px;*/
+                    /*position:fixed;*/
+                    /*z-index:1;*/
                     
                     font-family:alegreya_sans_sc_medium;
                     
-                    overflow-y: auto;
+                    /*overflow-y: auto;*/
                     
-                    border-left-width:1px;
-                    border-left-style:solid;
-                    border-left-color:#333;
-                    border-right-width:1px;
-                    border-right-style:solid;
-                    border-right-color:#333;
+                    /*border-left-width:1px;*/
+                    /*border-left-style:solid;*/
+                    /*border-left-color:#333;*/
+                    /*border-right-width:1px;*/
+                    /*border-right-style:solid;*/
+                    /*border-right-color:#333;*/
+                    
+                    /*col-sm-12*/
+                    -webkit-box-fless:0;
+                    -ms-flex:0 0 100%;
+                    flex:0 0 100%;
+                    max-width:100%;
+                    
+                    top:55px;
                 }
                 
                 
@@ -198,8 +212,9 @@
                     
                     /* selected link */
                     .my-leftpan2-tab.list-group-item.active{
-                        background-color:#FDFDFF;  
-                        color: #333;
+                        /*background-color:#FDFDFF;  */
+                        background-color:#31485e;
+                        color: #FFFFFF;
                         font-weight:bold;
                     }
                 
@@ -234,57 +249,38 @@
 
 
 
-.my-subpage-content-container{
-    padding-right:0px;
-    background-color: #fdfdff;
-    color:#333;
-    /*height:100vh;*/
-    padding-left:247px;
-    z-index:0;
+    .my-subpage-content-container{
+        padding-right:0px;
+        background-color: #fdfdff;
+        color:#333;
+        /*height:100vh;*/
+        /*padding-left:247px;*/
+        z-index:0;
+        
+    }
     
-}
-
-#id-home-content-scroll{
-    height:100vh;
-    overflow-y: scroll; 
-    position:relative;
-    text-align:justify;
-    /*padding:40px;*/
-    /*margin-left:40px;*/
-    
-}
+    #id-home-content-scroll{
+        /*height:100vh;*/
+        overflow-y: scroll; 
+        position:relative;
+        text-align:justify;
+        /*padding:40px;*/
+        /*margin-left:40px;*/
+        
+    }
 
     .my-home-content-post-container{
         max-width:1000px;
         min-width:400px;
         /*padding-left:20px*/
     }
+    
+    
+    
+    
 
 /*Small devices (landscape phones, 576px and up)*/
 /*sm*/
 @media (min-width: 576px) { 
-    
-}
-
-
-/*============================================================================*/
-/*        ABOVE IS MOBILE             BELOW IS DESKTOP                         */
-/*============================================================================*/
-
-/*Medium devices (tablets, 768px and up)*/
-/*md*/
-@media (min-width: 768px) { 
-
-}
-
-/*Large devices (desktops, 992px and up)*/
-/*lg*/
-@media (min-width: 992px) { 
-    
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-/*xl*/
-@media (min-width: 1200px) {  
     
 }

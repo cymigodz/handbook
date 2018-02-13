@@ -1,0 +1,270 @@
+/*ANYTHING ONLY MOBILE NEED BUT DESKTOP DONT*/
+/*NEED TO BE UNSET*/
+
+/*Medium devices (tablets, 768px and up)*/
+/*md*/
+@media (min-width: 768px) { 
+    
+/*Page*/
+
+    .my-page-container{
+        
+    }
+
+    .my-page-row{
+        
+    }
+
+    /*layout-page-leftpan1*/
+    .my-leftpan1-container{
+        
+        /*col-sm-12*/
+        /*unset*/
+        /*-webkit-box-fless:unset;*/
+        /*-ms-flex:unset;*/
+        flex:unset;
+        max-width:unset;
+        
+        font-family:alegreya_sans_sc_medium;
+        background-color:#2C3E50;
+        color:#FDF3E7;
+        
+        padding-left:0px;
+        padding-right:0px;
+        padding-top:30px;
+        border-left-width:1px;
+        border-left-style:solid;
+        border-left-color:#333;
+        
+        height:100vh;
+        width:247px;
+        z-index:1;
+        
+        position:fixed;
+        overflow-y: auto;
+        
+        
+        
+    }
+
+         /*top left logo*/
+        .my-leftpan1-logo{
+            padding-top:0px;
+            padding-right:27px;
+            padding-bottom:0px;
+            padding-left:15px;
+            margin-top:-70px;
+            margin-bottom:-25px;
+            
+            font-weight:bold;
+            font-size:156px;
+            font-family:logofont;
+            color:#ffffff;
+            text-align:unset;
+        }
+        
+        .my-leftpan1-menu{
+            overflow-x:unset;
+            overflow-y:unset;
+            height:unset;
+            flex-direction:column;
+            white-space:normal;
+        }
+        
+        .my-leftpan1-tab{
+            background-color:#2C3E50;
+            color: #FDF3E7;
+            border: none;
+            outline: 0;
+            outline-style: none;
+        }
+        
+        /* unvisited link */
+        .my-leftpan1-tab:link {
+            background-color:#2C3E50;
+            color: #FDF3E7;
+        }
+        
+         /*visited link */
+        .my-leftpan1-tab:visited {
+            background-color:#2C3E50;
+            color: #FDF3E7;
+        }
+        
+        /* mouse over link */
+        .my-leftpan1-tab:hover {
+            background-color:#2C3E50;
+            color: #FFFFFF;
+            font-weight:bold;
+        }
+        
+        /* selected link */
+        .my-leftpan1-tab.active{
+            background-color:#DC3545;
+            color: #FFFFFF;
+            font-weight:bold;
+        }
+        
+
+    /*layout-page-main*/
+    .my-main-container{
+        padding-right:0px;
+        background-color: #fdfdff;
+        color:#333;
+        height:100vh;
+        padding-left:247px;
+        z-index:0;
+    }
+    
+        
+        /*layout-page-main-subpage*/
+        .my-subpage-container{
+            
+        }
+        
+            /*/layout2*/
+            .my-subpage-row{
+                
+            }
+                .my-leftpan2-controller{
+                    display:none;
+                    background-color:#31485e;
+                    color:#FDF3E7;
+                }
+                
+                .my-leftpan2-container{
+                    padding-left:0px;
+                    padding-right:0px;
+                    padding-top:30px;
+                    background-color:#31485e;
+                    color:#FDF3E7;
+                    height:100vh;
+                    width:247px;
+                    position:fixed;
+                    z-index:1;
+                    
+                    font-family:alegreya_sans_sc_medium;
+                    
+                    overflow-y: auto;
+                    
+                    border-left-width:1px;
+                    border-left-style:solid;
+                    border-left-color:#333;
+                    border-right-width:1px;
+                    border-right-style:solid;
+                    border-right-color:#333;
+                    
+                    display:unset;
+                    top:unset;
+                }
+                
+                
+                    .my-leftpan2-menu{
+                        
+                    }
+                    
+                    .my-leftpan2-tab{
+                        background-color:#31485e;
+                        color:#FDF3E7;
+                        font-size:13px;
+                        border:none;
+                        outline:0;
+                        outline-style: none;
+                    }
+                    
+                    /* Default State*/
+                    .my-leftpan2-tab:link {
+                        background-color:#31485e;
+                        color: #FDF3E7;
+                    }
+                    
+                     /*visited link */
+                    .my-leftpan2-tab:visited {
+                        background-color:#31485e;
+                        color: #FDF3E7;
+                    }
+                    
+                    /* mouse over link */
+                    .my-leftpan2-tab:hover {
+                        background-color:#31485e;
+                        color: #FFFFFF;
+                        font-weight:bold;
+                    }
+                    
+                    /* selected link */
+                    .my-leftpan2-tab.list-group-item.active{
+                        background-color:#FDFDFF;  
+                        color: #333;
+                        font-weight:bold;
+                    }
+                
+/*============================================*/
+/*PAGE SPECIFIC ITEMS*/
+/*============================================*/
+
+
+/*HOME LEFTPAN2 PAGINATION*/
+    .my-leftpan2-pagination{
+        padding-left:20px;
+    }
+    
+    .my-leftpan2-pagination .page-item, 
+    .my-leftpan2-pagination .page-link, 
+    .my-leftpan2-pagination .page-link:visited,
+    .my-leftpan2-pagination .page-link:link{
+        color: #FDF3E7;
+        background-color:#31485e;
+        border-color:#fff;
+    }
+    
+    .my-leftpan2-pagination > .page-item.active > .page-link, 
+    .my-leftpan2-pagination > .page-item:hover > .page-link{
+        color: #31485e;
+        background-color:#fff;
+        border-color:#fff;
+    }
+
+
+
+
+
+
+    .my-subpage-content-container{
+        padding-right:0px;
+        background-color: #fdfdff;
+        color:#333;
+        /*height:100vh;*/
+        padding-left:247px;
+        z-index:0;
+        
+    }
+    
+    #id-home-content-scroll{
+        height:100vh;
+        overflow-y: scroll; 
+        position:relative;
+        text-align:justify;
+        /*padding:40px;*/
+        /*margin-left:40px;*/
+        
+    }
+
+    .my-home-content-post-container{
+        max-width:1000px;
+        min-width:400px;
+        /*padding-left:20px*/
+    }
+    
+}
+
+/*Large devices (desktops, 992px and up)*/
+/*lg*/
+@media (min-width: 992px) { 
+    
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+/*xl*/
+@media (min-width: 1200px) {  
+    
+}
