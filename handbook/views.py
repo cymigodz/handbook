@@ -1,14 +1,12 @@
-import os
+#import framework
 from flask import Flask
+#used to render html templates in routings
 from flask import render_template
+#circular import __init__.py to gain access to variable app
 from handbook import app
 
-app = Flask(__name__)
-app.jinja_env.auto_reload = True
-app.config['TEMPLATE_AUTO_RELOAD'] = True
-
+#Route - Landing page
 @app.route('/')
 def index():
     return render_template('index.html')
 
-app.run(host=os.getenv('IP', '0.0.0.0'),port=int(os.getenv('PORT', 8080)))

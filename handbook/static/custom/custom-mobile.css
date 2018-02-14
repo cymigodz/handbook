@@ -2,8 +2,6 @@
 /*No media query since this is the default in Bootstrap*/
 /*xs*/
 
-
-
 /*TEST TEST TEST TEST TEST TEST*/
 /*END END END END END END END*/
 
@@ -78,7 +76,7 @@
         .my-leftpan1-menu{
             overflow-x:auto;
             overflow-y:hidden;
-            height:60px;
+            height:70px;
             flex-direction:row;
             white-space:nowrap;
             

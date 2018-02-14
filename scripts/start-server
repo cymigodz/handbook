@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cd /home/ubuntu/workspace
 # Flask APP
 export FLASK_APP=handbook
@@ -6,8 +6,7 @@ export FLASK_APP=handbook
 # export FLASK_DEBUG=true
 #======================
 
-
+# Ensure conditions in setup.py is met
 sudo pip install -e .
-# python /home/ubuntu/workspace/handbook/__init__.py
+# Run the application
 python -m flask run
-# python -m flask run --host=0.0.0.0 --port=8080

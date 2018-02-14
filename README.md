@@ -10,3 +10,5 @@ My personal website
 * Bootstrap - Front End Framework
 * TBD Database (Currently has firebase implementation but planning to change)
 
+#Known Issues
+* Unable to load page when debugger is active
