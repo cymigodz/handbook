@@ -16,10 +16,6 @@ Handbook
         href="#id-subpage-container-home">Blog</a>
     <a class="list-group-item list-group-item-action my-leftpan1-tab"        
         data-toggle="tab" 
-        id="id-leftpan1-aboutme"  
-        href="#id-subpage-container-aboutme"  >Me</a>
-    <a class="list-group-item list-group-item-action my-leftpan1-tab"        
-        data-toggle="tab" 
         id="id-leftpan1-projects" 
         href="#id-subpage-container-projects" >Projects</a>
         
@@ -45,8 +41,8 @@ Handbook
 {% endblock %}
 
 {% block layout1_main %} 
+
 <div class="tab-pane show active" id="id-subpage-container-home"     > {% include "/content/home.html" %} </div>
-<div class="tab-pane"             id="id-subpage-container-aboutme"  > {% include "/content/aboutme.html" %} </div>
 <div class="tab-pane"             id="id-subpage-container-projects" > {% include "/content/projects.html" %} </div>
 
 <div class="tab-pane"             id="id-subpage-container-gameplay"  > {% include "/content/gameplay.html" %} </div>

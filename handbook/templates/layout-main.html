@@ -5,14 +5,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS of Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--CSS for mobile view-->
     <link rel="stylesheet" href="static/custom/custom-mobile.css">
+    <!--CSS for desktop view-->
     <link rel="stylesheet" href="static/custom/custom-desktop.css">
+    
     <title>
-      
       {% block layout1_title %}{% endblock %}
-      
     </title>
+    
   </head>
   
   <body>
@@ -22,17 +25,13 @@
 <!--START Left Panel-->
         <div class="my-leftpan1-container">
           <p class="my-leftpan1-logo">CУ</p>
-          
           {% block layout1_leftpan1 %} {% endblock %}
-          
         </div>
 <!--END Left Panel-->
         
 <!--START CONTENT -->
         <div class="tab-content col-sm-12 my-main-container">
-          
           {% block layout1_main %} {% endblock %}
-          
         </div>
 <!--END CONTENT-->
 

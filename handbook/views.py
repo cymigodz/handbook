@@ -1,9 +1,9 @@
 #import framework
 from flask import Flask
+#circular import __init__.py to gain access to app instance
+from handbook import app
 #used to render html templates in routings
 from flask import render_template
-#circular import __init__.py to gain access to variable app
-from handbook import app
 
 #Route - Landing page
 @app.route('/')
