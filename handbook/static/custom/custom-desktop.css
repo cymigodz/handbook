@@ -171,12 +171,12 @@
                     }
                     
                     .my-leftpan2-tab{
-                        background-color:#31485e;
-                        color:#FDF3E7;
-                        font-size:13px;
-                        border:none;
-                        outline:0;
-                        outline-style: none;
+                        /*background-color:#31485e;*/
+                        /*color:#FDF3E7;*/
+                        /*font-size:17px;*/
+                        /*border:none;*/
+                        /*outline:0;*/
+                        /*outline-style: none;*/
                     }
                     
                     /* Default State*/
@@ -195,14 +195,14 @@
                     .my-leftpan2-tab:hover {
                         background-color:#31485e;
                         color: #FFFFFF;
-                        font-weight:bold;
+                        /*font-weight:bold;*/
                     }
                     
                     /* selected link */
                     .my-leftpan2-tab.list-group-item.active{
                         background-color:#FDFDFF;  
                         color: #333;
-                        font-weight:bold;
+                        /*font-weight:bold;*/
                     }
                 
 /*============================================*/
@@ -265,6 +265,15 @@
         max-width:unset;
         min-width:400px;
         /*padding-left:20px*/
+    }
+    .scrollable-menu {
+        /*height: auto;*/
+        /*max-height: 200px;*/
+        /*overflow-x: hidden;*/
+    }
+    
+    .card-body{
+        /*color:#444F8A;*/
     }
     
 }

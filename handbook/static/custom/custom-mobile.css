@@ -178,13 +178,18 @@
                 
                 
                     .my-leftpan2-menu{
-                        
+                        width: 216px;
+                        background-color: rgb(49, 72, 94);
+                    
+                        height: auto;
+                        max-height: 60vh;
+                        overflow-x: hidden;
                     }
                     
                     .my-leftpan2-tab{
                         background-color:#31485e;
                         color:#FDF3E7;
-                        font-size:13px;
+                        font-size:15px;
                         border:none;
                         outline:0;
                         outline-style: none;
@@ -206,7 +211,7 @@
                     .my-leftpan2-tab:hover {
                         background-color:#31485e;
                         color: #FFFFFF;
-                        font-weight:bold;
+                        /*font-weight:bold;*/
                     }
                     
                     /* selected link */
@@ -214,7 +219,7 @@
                         /*background-color:#FDFDFF;  */
                         background-color:#31485e;
                         color: #FFFFFF;
-                        font-weight:bold;
+                        /*font-weight:bold;*/
                     }
                 
 /*============================================*/
@@ -277,9 +282,18 @@
         /*max-width:1000px;*/
         /*min-width:200px;*/
         /*padding-left:20px*/
+        
     }
     
+    .scrollable-menu {
+        height: auto;
+        max-height: 200px;
+        overflow-x: hidden;
+    }
     
+    .card-body{
+        color:#444;
+    }
 
 /*Small devices (landscape phones, 576px and up)*/
 /*sm*/
@@ -287,3 +301,5 @@
 
     
 }
+
+
