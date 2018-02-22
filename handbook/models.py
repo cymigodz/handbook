@@ -4,3 +4,7 @@ from flask import Flask
 from handbook import app
 
 import pymongo
+from pymongo import MongoClient
+
+
+client = MongoClient()

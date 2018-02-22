@@ -11,4 +11,4 @@ My personal website
 * TBD Database (Currently has firebase implementation but planning to change)
 
 #Known Issues
-* ~~Unable to load page when debugger is active~~ (as of 20th Feb 2018)
+* ~~Unable to load page when debugger is active~~ (fixed as of 20th Feb 2018)
