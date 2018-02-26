@@ -176,10 +176,14 @@
                     top:55px;
                 }
                 
+                    .my-leftpan2-dropdown{
+                        
+                    }
+                
                 
                     .my-leftpan2-menu{
                         width: 216px;
-                        background-color: rgb(49, 72, 94);
+                        /*background-color: rgb(49, 72, 94);*/
                     
                         height: auto;
                         max-height: 60vh;

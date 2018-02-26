@@ -7,4 +7,12 @@ import pymongo
 from pymongo import MongoClient
 
 
-client = MongoClient()
+# Default
+# client = MongoClient() 
+# By IP Address and Port
+client = MongoClient('localhost', 27017)
+# By Mongo URI
+# client = MongoClient('mongodb://localhost:27017/') 
+
+db = client["db-test"]
+collection = db["col-test"]
