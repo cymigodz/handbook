@@ -10,5 +10,7 @@ app.jinja_env.auto_reload = True
 app.config['TEMPLATE_AUTO_RELOAD'] = True 
 
 # importing modules/packages that forms the application
-import handbook.models # database models
-import handbook.views # routing and page view generations
+# import handbook.models # database models
+# import handbook.views # routing and page view generations
+
+from app import models, views
